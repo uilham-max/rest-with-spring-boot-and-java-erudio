@@ -3,9 +3,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/rest_with_spring_boot_erudio
+    url: jdbc:mysql://localhost:3306/rest_with_spring_boot_erudio?useSSL=false&serverTimezone=UTC
     username: root
     password: mysql
   jpa:
-    hibernate:
-      ddl-auto: update
+    hibernate.ddl-auto: update
+    show-sql: true
